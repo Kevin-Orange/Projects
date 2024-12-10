@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Membership</title>
+        <link rel="stylesheet" href="../CSS/final.css">
+    </head>
+    <body>
+        <div id = "wrapper">
+            <span id="header">
+                <img src="../Images/logo.png" alt="Logo" id="Logo">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Programs/index.html">Programs</a></li>
+                    <li><a href="../Facilities/index.html">Facilities</a></li>
+                    <li><a href="../Events/index.html">Events</a></li>
+                    <li><a href="../Membership/index.html">Membership</a></li>
+                </ul>
+            </span>
+            <div id="main">
+                <h1>Apply to be a Member</h1>
+                <div class="container">
+                    <div class="column left">
+                        <p><img src="../Images/membership.jpg" alt="Personal Trainer" id="membershipImg"></p>
+                    </div>
+                    <div class="column right">
+                        <h2>Why join our Community?</h2>
+                        <p> Becoming a member of our gym isn't just about 
+                            fitness—it's about being part of a community that supports and motivates each other. 
+                            Enjoy state-of-the-art facilities, diverse programs, and access to top-tier trainers 
+                            who are dedicated to helping you achieve your goals.
+                        </p>
+                    </div>
+                </div>
+                <div id="forms">
+                    <h3 id="memhead">Membership Form</h3>  
+                    <form action="../thankyou.html" method="post" id="memForm">
+                        <hr class="divider">
+                        First Name: <input type="text" name="first"><br>
+                        Last Name:<input type="text" name="last"><br>
+                        Email:<input type="text" name="email"><br>
+                        What's your fitness goal?<br><br>
+                        <div id="radio">
+                            <input type="radio" name="goals" value="Weight Loss">Weight Loss <br> 
+                            <input type="radio" name="goals" value="Muscle Gain">Muscle Gain <br>
+                            <input type="radio" name="goals" value="General Fitness">General Fitness <br>
+                            <br>
+                        </div>
+                         Which membership would be best for your goals ?
+                         <select name="membership">
+                            <option value="Basic">Basic</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                        <br>
+                        <br> What motivates you to join our community?
+                        <textarea name="Purpose" id="Purpose"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
